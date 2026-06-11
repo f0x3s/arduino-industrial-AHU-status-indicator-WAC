@@ -7,7 +7,7 @@
   see details: github link
 
   created 10 Jun 2026
-  by David A. Mellis
+  by foxes
   modified 11 Jun 2026
   by foxes
 
