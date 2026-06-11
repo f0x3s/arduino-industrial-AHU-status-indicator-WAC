@@ -18,5 +18,5 @@
 
 
 ## Note
-<em>expected serial output:</em><br>
+<em>sample expected serial output:</em><br>
 <img src="Fan_Status_Indicator_SampleOutput.png" alt="example serial output" style="width:40em; height:auto;">
