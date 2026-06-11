@@ -1,4 +1,4 @@
-## Arduino Industrial Fan State Monitor
+## Arduino Industrial Fan Status Monitor
 
 ## Required components
 
