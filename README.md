@@ -1,8 +1,8 @@
-## Arduino Industrial Fan Status Indicator
+## Arduino Industrial AHU Status Indicator
 
-This project exists as a part of larger infrasctructure to support the laser cutter & digital fabrication space at the Walker Art Center. The laser cutter is vented using an inline blower fan into our paint booth's air handling system several rooms over. It is important that both the inline fan and the building's air handling unit (AHU) are on during laser operation. 
+This project exists as a part of larger infrasctructure to support the laser cutter & digital fabrication space at the Walker Art Center. The laser cutter is vented using an inline blower fan into our paint booth's air handling system several rooms over. It is important that both the inline fan and the paint booth's air handling unit (AHU) are on during laser operation. 
 
-It is easy to verify the status of the inline blower as it is next to the laser, but with the AHU in a separate location we needed a feedback system to monitor that the start signal was successfully recieved and alert if the unit turned off for any reason.
+It is easy to verify the status of the inline blower as it is next to the laser, but with the AHU in a separate location a feedback system is required to monitor that the start signal was successfully recieved and alert if the unit turns off for any reason.
 
 <p align="center">
   <img src="media/industial-fan-status-indicator-installed-a.jpg" alt="Installation view A" style="width:45%; height:auto;">
@@ -28,9 +28,20 @@ The device uses an ultrasonic sensor to detect passing spokes on the belt and pu
 
 ## Schematic Diagram
 
+<img src="media/arduino-industrial-fan-status-monitor_schematic.png" alt="electrical schematic" style="width:60%; height:auto;">
+
+Notes:
+* 24v IN to the relay's COM terminal is sourced from the user AHU start signal. This signal remains on for the duration that laser is engaged. This ensures that the feedback lamp will illuminate IFF the fan is spinning && the user has sent a start signal. The lamp will not illuinate if the AHU is activated by someone in the paint booth but an activation request isn't sent from the laser cutter, minimizing confusion.
+* Indicator lamp shown on schematic is to placed near the device (see main photos), for local operational verification. The second indicator lamp is placed in room with the laser cutter, receiving 24v out from the NO relay terminal and acting as the primary status indiator for the user.
+* 24v signals sent over 2-conductor speaker wire or equivalent, all other wires shown are small jumper wires.
 
 
+## Debugging
 
-## Note
-<em>sample expected serial output:</em><br>
+sample expected serial output:
+<br>
+<br>
 <img src="media/Fan_Status_Indicator_SampleOutput.png" alt="example serial output" style="width:40em; height:auto;">
+<br>
+<br>
+If the relay is not triggering, the spoke/no spoke distance values may be identified with the serial plotter and the threshold adjusted accordingly.
