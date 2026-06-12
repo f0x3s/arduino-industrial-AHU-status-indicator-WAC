@@ -153,6 +153,7 @@ void addToBuffer(float value) {
   }
 
   buffer[head] = value;
+  Serial.println(value);
   head = (head + 1) % BUFFER_SIZE;
 }
 
