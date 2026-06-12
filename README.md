@@ -1,4 +1,4 @@
-## Arduino Industrial AHU Status Indicator
+# Arduino Industrial AHU Status Indicator
 
 This project exists as a part of larger infrasctructure to support the laser cutter & digital fabrication space at the Walker Art Center. The laser cutter is vented using an inline blower fan into our paint booth's air handling system several rooms over. It is important that both the inline fan and the paint booth's air handling unit (AHU) are on during laser operation. 
 
