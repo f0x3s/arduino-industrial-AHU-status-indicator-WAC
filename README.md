@@ -32,7 +32,7 @@ The device uses an ultrasonic sensor to detect passing spokes on the belt and pu
 
 Notes:
 * 24v IN to the relay's COM terminal is sourced from the user AHU start signal. This signal remains on for the duration that laser is engaged. This ensures that the feedback lamp will illuminate IFF the fan is spinning && the user has sent a start signal. The lamp will not illuinate if the AHU is activated by someone in the paint booth but an activation request isn't sent from the laser cutter, minimizing confusion.
-* Indicator lamp shown on schematic is to placed near the device (see main photos), for local operational verification. The second indicator lamp is placed in room with the laser cutter, receiving 24v out from the NO relay terminal and acting as the primary status indiator for the user.
+* Indicator lamp shown on schematic is to placed near the device (see main photos), for local operational verification. The second indicator lamp is placed in room with the laser cutter, receiving the samee 24v signal out from the NO relay terminal and acting as the primary status indiator for the user.
 * 24v signals sent over 2-conductor speaker wire or equivalent, all other wires shown are small jumper wires.
 
 
