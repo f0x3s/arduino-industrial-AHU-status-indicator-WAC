@@ -26,7 +26,7 @@ The device uses an ultrasonic sensor to detect passing spokes on the belt and pu
 * Wago connectors (as needed)
 * Two-conductor stranded wire (as needed)
 
-## Schematic Diagram
+## Circuit Diagram
 
 <img src="media/arduino-industrial-fan-status-monitor_schematic.png" alt="electrical schematic" style="width:60%; height:auto;">
 
