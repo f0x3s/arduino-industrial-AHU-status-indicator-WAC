@@ -9,7 +9,7 @@ It is easy to verify the status of the inline blower as it is next to the laser,
   <img src="media/industial-fan-status-indicator-installed-b.jpg" alt="Installation view A" style="width:45%; height:auto;">
 </p>
 
-
+> [Return to: laser-cutter-infrastructure-controls-system-WAC](https://github.com/f0x3s/laser-cutter-infrastructure-controls-system-WAC)
 ## Behavior
 
 The device uses an ultrasonic sensor to detect passing spokes on the belt and pully system driving the AHU, eliminating any possible ambiguity as to the system's operation. It does this by writing the distance output from the sensor at short intervals into a circular buffer, evaluating for the maximum and minimum distances within the buffer, and triggering a relay if the difference between them exceeds a set threshold. If the fan stops spinning, regardess of whether the pully lands with a spoke or hole in front of the sensor, the buffer will fill up with identical values, and with the threshold no longer met the relay will be deactivated. 
